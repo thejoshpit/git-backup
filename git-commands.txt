@@ -31,6 +31,9 @@ git add <new file to track>
 # Stage 'em for upload
 git commit
 
+# Stage and commit all at once if you're having problems 
+git commit -a
+
 # Push it real good
 git push origin master 
 
