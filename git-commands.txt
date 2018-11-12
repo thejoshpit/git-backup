@@ -1,2 +1,36 @@
-test
+# Config username
+git config --global user.name "thorshand"
+
+# Config email 
+git config --global user.email ""
+
+# Create new RSA key for SSH (make sure old one is dead)
+ssh-keygen -t rsa -C "thorshand@gmail.com
+
+# Copy the blog to the clipboard for pasting to github
+pbcopy < ~/.ssh/id_rsa.pub
+
+# Create new Git dir
+mkdir Git
+
+# Get up in there
+cd Git/
+
+# Initialize git for this dir
+git init
+
+# I think this connects my local instance to my repo
+git remote add origin https://github.com/thorshand/...
+
+# Pull some stuff down 
+git clone <repo>
+
+# Start tracking a file
+git add <new file to track>
+
+# Stage 'em for upload
+git commit
+
+# Push it real good
+git push origin master 
 
